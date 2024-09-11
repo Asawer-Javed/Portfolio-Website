@@ -1,0 +1,497 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+#header{
+    margin-left: 10%;
+    border: none;
+    border-radius: 30px;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: teal;
+    box-shadow: 2px 2px 5px;
+    position: fixed;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+#logo{
+    margin: 40px;
+    color: white;
+}
+
+#navbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-item{
+    padding: 10px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+.nav-item:hover,
+.nav-item.active{
+    color: orange;
+    cursor: pointer;
+}
+
+/* Main About Section */
+
+#About{
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    width: 80%;
+    height: 470px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px;
+    position: relative;
+    margin-top: 170px;  
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#content h2{
+    color: white;
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+#content p{
+    color: white;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+#content a{
+    color: teal;
+    background-color: white;
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 80px;
+    padding-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#content a:hover{
+    width: 50px;
+    height: 48px;
+    border-radius: 40px ;
+    padding-top: 13px;
+}
+
+div img{
+    margin-top: 120px;
+    margin-left: 200px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+/* Projects Section */
+
+#Projects{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+}
+
+.card{
+    background-color: teal;
+    border-radius: 40px;
+    width: 20%;
+    height: 360px;
+    color: white;
+    padding: 50px;
+    margin-left: 10%;
+    box-shadow: 2px 2px 8px black; 
+    text-align: left;
+}
+
+.card p{
+    margin-top: 15px;
+}
+
+/* Contact Section */
+
+#contact{
+    display: flex;
+    flex-direction: row; 
+    margin-left: 10%;
+    margin-top: 9%;
+    width: 80%;
+    height: 500px;
+    background-color: teal;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+}
+
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#contact h2{
+    margin-top: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+#contact #contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#contact #contact-form .item{
+    margin: 10px;
+    border: 2px solid teal;
+    border-radius: 10px ;
+    padding-left: 10px;
+}
+
+#contact #contact-form .item:focus{
+    box-shadow: 2px 2px 8px black;
+}
+
+#contact #contact-form input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+#contact #contact-form textarea{
+    padding-top: 5px;
+    resize:none;
+    width: 100%;
+    height: 80px;
+}
+
+button{
+    width: 80px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 30%;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+}
+
+button:hover{
+    border: 3px solid orange;
+    background-color: teal;
+    color: orange;
+    
+}
+
+#social-media{
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 12%;
+}
+
+#footer{
+    color: white;
+    background-color: black;
+    padding: 50px;
+    margin-top: 9%;
+}
+
+#footer p{
+    margin: 5px;
+}
+
+
+@media (max-width : 1198px) {
+    div img{
+        margin-left: 100px;
+    } 
+    .card{
+        padding: 40px;
+    }
+    #social-media{
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+}
+
+@media (max-width : 1096px) {
+    .card{
+        padding: 30px;
+    }
+    #content a{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width : 916px) {
+    .card{
+        padding: 28px;
+        width: 23%;
+        margin-left: 8%;
+    }
+}
+
+@media (max-width : 880px) {
+    div img{
+        margin-left: 50px;
+    }
+    #social-media{
+        margin-left: 12%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width : 820px){
+    #content a{
+        display: none;
+    }
+}
+
+@media (max-width : 789px){
+    #social-media{
+        margin-left: 12%;
+        margin-top: 25%;
+    }
+}
+
+
+@media (max-width : 771px){
+    .nav-item{
+        padding: 0px;
+        margin-right: 35px;
+        font-size: 15px;
+    }
+    #content p{
+        font-size: 13px;
+    }
+    div img{
+        width: 200px;
+        height: 200px;
+    }
+    .card{
+        font-size: 13px;
+        height: 290px;
+    }
+    #social-media{
+        margin-left: 8%;
+    }
+}
+
+@media (max-width : 731px){
+    .card{
+        width: 210px;
+        margin-left: 4%;
+
+    }
+}
+
+@media (max-width : 707px){
+    div img{
+        width: 180px;
+        height: 180px;
+        margin-top: 160px;
+        margin-left: 40px;
+    }
+    #contact{
+        width: 50%;
+        margin-left: 25%;
+    }
+    #social-media{
+        display: none;
+    }
+}
+
+@media (max-width : 618px){
+    #content p{
+        font-size: 12px ;
+    }
+    div img{
+        width: 150px;
+        height: 150px;
+    }
+    #contact-info{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width : 533px){
+    #contact-info{
+        margin-left: 1%;
+    }
+}
+
+@media (max-width : 517px){
+    #navbar{
+        margin-right: 35px;
+    }
+    .nav-item{
+        margin-right: 9px;
+    }
+    #About{
+        flex-direction: column;
+        margin-top: 150px;  
+        margin-left: 15%;
+        height: 500px;
+        width: 350px;
+    }
+    #content{
+        width: 100%;
+        height: 100px;
+    }
+    #content p {
+        font-size: 12px;
+        margin-left: 50px;
+    }
+    div img{
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+    #Projects{
+        flex-direction: column;
+    }
+    .card{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width : 485px){
+    #About{
+        width: 330px;
+    }
+    div img{
+        margin-top: 210px;
+        margin-left: 90px;
+    }
+    #contact{
+        width: 300px;
+        margin-left: 80px;
+    }
+    #contact #contact-form .item{
+        margin: 10px;
+}
+}
+
+@media (max-width : 412px){
+    #header{
+        margin-left: 7%;
+        width: 80%;
+        height: 45px;
+    }
+    #About{
+        margin-left: 30px;
+        width: 80%;
+        height: 470px;
+        margin-top: 130px;  
+    }
+    #logo{
+        margin: 30px;
+    }
+    #contact{
+        margin-left: 10%;
+        margin-top: 9%;
+        width: 75%;
+        height: 500px;
+    }
+}
+
+@media (max-width : 386px){
+    #header{
+        width: 85%;
+        height: 30px;
+    }
+    .card{
+        margin-left: 50px;
+        width: 70%;
+    }
+}
+
+@media (max-width : 358px){
+    #About h2{
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    #About{
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    #About p{
+        margin-top: 20px;
+    }
+    div img{
+        margin-top: 170px;
+        margin-left: 70px;
+    }
+    #header{
+        margin-left: 15px;
+        width: 83%;
+        font-size: 13px;
+        height: 35px;
+    }
+    .nav-item{
+        margin-right: 10px;
+    }
+    .card{
+        margin-left: 40px;
+    }
+    #navbar a{
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
+
+@media (max-width : 328px){
+    #navbar a{
+        font-size: 10px;
+
+    }
+    div img{
+        margin-top: 180px;
+        margin-left: 50px;
+    }
+    #contact #contact-form{
+        margin: 10px;
+}
+}
